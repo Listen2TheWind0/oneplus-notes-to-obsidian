@@ -11,7 +11,7 @@ The workflow reads the backup files commonly produced by the ColorOS/OnePlus bac
 - `folder`
 - `files/file_backup.zip`
 
-It converts rich notes to Markdown, writes Todo lists, copies referenced attachments, produces an export report, scans generated text for common secret patterns, and can be followed by an explicit Git commit and push.
+It converts rich notes to Markdown, writes Todo lists, copies referenced attachments, produces an export report, and scans generated text for common secret patterns to help prevent sensitive note content from being accidentally uploaded to an open-source repository or GitHub. Git commit and push are separate explicit steps.
 
 ## Features
 
@@ -21,7 +21,7 @@ It converts rich notes to Markdown, writes Todo lists, copies referenced attachm
 - Relative Obsidian/GitHub-compatible attachment links.
 - Folder-name preservation with a fallback for uncategorized notes.
 - Stable filenames based on date and record ID; note bodies are not used in paths.
-- Local secret scan that never prints matching secret values.
+- Local secret scan that helps prevent sensitive note content from being accidentally uploaded to an open-source repository or GitHub, without printing matching secret values.
 - Explicit exclusion of `.obsidian/workspace.json` from Git.
 - Python standard library only; no third-party package is required.
 
