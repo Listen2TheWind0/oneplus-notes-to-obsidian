@@ -1,0 +1,3 @@
+interface:
+  display_name: "OnePlus Notes to Obsidian"
+  short_description: "Export ColorOS Notes backups to Obsidian with local secret scanning"
